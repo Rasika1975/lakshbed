@@ -1,0 +1,7 @@
+This is a placeholder file for images. In a real project, you would add actual image files here:
+
+1. hero.jpg - A professional image representing healing and transformation
+2. sir-profile.jpg - Professional headshot of the practitioner
+3. logo.png - Clinic logo
+
+These images should be high-quality, professional photos that align with the therapeutic nature of the clinic.
