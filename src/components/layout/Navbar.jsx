@@ -34,8 +34,8 @@ const Navbar = () => {
 
   return (
     <nav 
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-6xl rounded-2xl border border-gray-100 transition-all duration-300 ${
-        scrolled ? 'bg-white/95 shadow-md py-1' : 'bg-white/80 backdrop-blur-md py-2'
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-6xl rounded-2xl border border-white/40 transition-all duration-300 ${
+        scrolled || isOpen ? 'bg-white/95 shadow-xl py-2 backdrop-blur-xl' : 'bg-white/70 backdrop-blur-lg py-3 shadow-sm'
       }`}
     >
       <div className="px-4">
@@ -44,9 +44,9 @@ const Navbar = () => {
             <img 
               src="https://placehold.co/40x40/1e40af/ffffff?text=LG" 
               alt="Lakshyabhed Gurukul Logo" 
-              className="h-10 w-10 mr-3 rounded-full"
+              className="h-10 w-10 mr-3 rounded-full shadow-sm"
             />
-            <Link to="/" className="text-xl font-bold text-blue-800">
+            <Link to="/" className="text-xl font-bold text-slate-800 hover:text-indigo-700 transition-colors">
               Lakshyabhed Gurukul
             </Link>
           </div>
@@ -64,8 +64,8 @@ const Navbar = () => {
                 }}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
                   isActive(item.path)
-                    ? 'text-blue-700 bg-blue-100'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100'
+                    ? 'text-indigo-700 bg-indigo-50'
+                    : 'text-slate-600 hover:text-indigo-600 hover:bg-slate-50'
                 }`}
               >
                 {item.name}
@@ -80,7 +80,7 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="px-5 py-2.5 rounded-full text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-sm"
+                  className="px-5 py-2.5 rounded-full text-sm font-medium bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 transform duration-200"
                 >
                   {item.name}
                 </Link>
@@ -91,7 +91,9 @@ const Navbar = () => {
             <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none"
+              className="text-slate-700 hover:text-indigo-600 focus:outline-none p-2 rounded-md hover:bg-slate-100 transition-colors"
+              aria-label="Toggle menu"
+              aria-expanded={isOpen}
             >
               <svg
                 className="h-6 w-6"
@@ -123,7 +125,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-gray-200">
+          <div className="md:hidden mt-2 py-4 border-t border-gray-100 animate-fadeIn">
             <div className="flex flex-col space-y-3">
               {navigationItems.map((item) => (
                 <Link
@@ -137,9 +139,9 @@ const Navbar = () => {
                   }}
                   className={`px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                     isActive(item.path)
-                      ? 'text-blue-700 bg-blue-100'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100'
-                  } ${item.highlight ? 'bg-blue-600 text-white hover:bg-blue-700' : ''}`}
+                      ? 'text-indigo-700 bg-indigo-50'
+                      : 'text-slate-600 hover:text-indigo-600 hover:bg-slate-50'
+                  } ${item.highlight ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 text-center mt-2 shadow-sm' : ''}`}
                 >
                   {item.name}
                 </Link>
