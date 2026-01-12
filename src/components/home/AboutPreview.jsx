@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SectionTitle from '../common/SectionTitle';
 import Button from '../common/Button';
+import sirProfileImg from '../../assets/images/sirprofile.png';
 
 const AboutPreview = () => {
   return (
@@ -11,7 +12,7 @@ const AboutPreview = () => {
           <div className="lg:w-1/2 mb-12 lg:mb-0">
             <div className="relative">
               <img 
-                src="/assets/images/sir-profile.jpg" 
+                src={sirProfileImg}
                 alt="Dr. Lakshyabhed - Mental Wellness Specialist" 
                 className="w-full max-w-md mx-auto rounded-lg shadow-xl"
               />

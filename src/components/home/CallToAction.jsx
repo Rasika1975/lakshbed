@@ -12,12 +12,12 @@ const CallToAction = () => {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link to="/book-appointment">
-            <Button variant="primary" size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+            <Button variant="primary" size="lg" className="bg-[#4A90E2] text-white hover:bg-[#357ABD] font-semibold">
               Book an Appointment
             </Button>
           </Link>
           <Link to="/contact">
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-600">
+            <Button variant="outline" size="lg" className="bg-[#45B7D1] border-[#45B7D1] text-white hover:bg-[#3aa0b5] hover:border-[#3aa0b5]">
               Contact Us
             </Button>
           </Link>

@@ -38,6 +38,11 @@ const Navbar = () => {
         scrolled || isOpen ? 'bg-white/95 shadow-xl py-2 backdrop-blur-xl' : 'bg-white/70 backdrop-blur-lg py-3 shadow-sm'
       }`}
     >
+      <style>{`
+        html {
+          scroll-behavior: smooth;
+        }
+      `}</style>
       <div className="px-4">
         <div className="relative flex justify-between items-center h-14">
           <div className="flex items-center flex-shrink-0">
@@ -80,7 +85,7 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="px-5 py-2.5 rounded-full text-sm font-medium bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 transform duration-200"
+                  className="px-5 py-2.5 rounded-full text-sm font-medium bg-[#4A90E2] text-white hover:bg-[#357ABD] transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 transform duration-200"
                 >
                   {item.name}
                 </Link>
@@ -141,7 +146,7 @@ const Navbar = () => {
                     isActive(item.path)
                       ? 'text-indigo-700 bg-indigo-50'
                       : 'text-slate-600 hover:text-indigo-600 hover:bg-slate-50'
-                  } ${item.highlight ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 text-center mt-2 shadow-sm' : ''}`}
+                  } ${item.highlight ? 'bg-[#4A90E2] text-white hover:bg-[#357ABD] text-center mt-2 shadow-sm' : ''}`}
                 >
                   {item.name}
                 </Link>

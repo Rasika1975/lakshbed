@@ -44,9 +44,9 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/book-appointment">
-                <Button variant="primary" size="lg" className="!bg-stone-700 hover:!bg-stone-800 !text-white !rounded-full !pl-6 !pr-2 !py-2 flex items-center gap-3 group transition-all shadow-lg hover:shadow-xl">
+                <Button variant="primary" size="lg" className="!bg-[#4A90E2] hover:!bg-[#357ABD] !text-white !rounded-full !pl-6 !pr-2 !py-2 flex items-center gap-3 group transition-all shadow-lg hover:shadow-xl">
                   <span className="font-medium">Book Session</span>
-                  <div className="bg-white text-stone-700 w-9 h-9 rounded-full flex items-center justify-center transition-transform group-hover:translate-x-1">
+                  <div className="bg-white text-[#4A90E2] w-9 h-9 rounded-full flex items-center justify-center transition-transform group-hover:translate-x-1">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                     </svg>
