@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const ServiceCard = ({ service }) => {
   return (
-    <Card className="h-full flex flex-col">
+    <Card className="h-full flex flex-col animate-on-scroll">
       <div className="flex justify-center mb-6">
         <Icon type={service.iconType} className="w-12 h-12 text-blue-600" />
       </div>

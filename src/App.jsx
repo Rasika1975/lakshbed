@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
@@ -12,9 +12,16 @@ import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Disclaimer from './pages/Disclaimer';
+import { initAnimations } from './utils/gsapAnimations';
+import FloatingElements from './components/common/FloatingElements';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    // Initialize GSAP animations
+    initAnimations();
+  }, []);
+
   return (
     <Router>
       <div className="min-h-screen bg-gray-50">
@@ -23,6 +30,7 @@ function App() {
         {/* Add spacing for fixed navbar */}
         <div className="h-12 md:h-14"></div>
         <main style={{ marginTop: '48px' }}>
+          <FloatingElements />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

@@ -3,7 +3,7 @@ import React from 'react';
 const Card = ({ children, className = '', header, footer, image, alt = '', ...props }) => {
   return (
     <div 
-      className={`bg-white rounded-lg shadow-md overflow-hidden transition-shadow duration-200 hover:shadow-lg ${className}`}
+      className={`bg-white rounded-lg shadow-md overflow-hidden transition-shadow duration-200 hover:shadow-lg enhanced-card ${className}`}
       {...props}
     >
       {image && (

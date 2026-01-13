@@ -38,7 +38,7 @@ const ServicesPreview = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {services.map((service) => (
-            <Card key={service.id} className="text-center p-8 hover:shadow-xl transition-shadow">
+            <Card key={service.id} className="text-center p-8 hover:shadow-xl transition-shadow animate-on-scroll">
               <div className="flex justify-center mb-6">
                 <Icon type={service.iconType} className="w-12 h-12 text-blue-600" />
               </div>

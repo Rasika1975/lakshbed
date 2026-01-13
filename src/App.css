@@ -1,1 +1,56 @@
 @import "tailwindcss";
+
+/* Custom styles for floating elements */
+.clip-triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Custom styles for glassmorphism */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Animation keyframes */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scroll-based blur effect */
+.blur-on-scroll {
+  transition: filter 0.3s ease;
+}
+
+/* Enhanced card styles */
+.enhanced-card {
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  will-change: transform;
+}
+
+.enhanced-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}

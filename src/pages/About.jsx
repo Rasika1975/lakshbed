@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTitle from '../components/common/SectionTitle';
 import Icon from '../components/common/Icon';
+import sirProfileImg from '../assets/images/sirprofile.png';
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
             <img 
-              src="/assets/images/sir-profile.jpg" 
+              src={sirProfileImg}
               alt="Practitioner Profile" 
               className="w-full rounded-lg shadow-xl"
             />
@@ -83,7 +84,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>  
     </div>
   );
 };
