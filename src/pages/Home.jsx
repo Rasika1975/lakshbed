@@ -4,6 +4,7 @@ import ServicesPreview from '../components/home/ServicesPreview';
 import AboutPreview from '../components/home/AboutPreview';
 import Testimonials from '../components/home/Testimonials';
 import CallToAction from '../components/home/CallToAction';
+import ProgramsVideos from '../components/common/ProgramsVideos';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <ServicesPreview />
       <AboutPreview />
+      <ProgramsVideos />
       <Testimonials />
       <CallToAction />
     </div>
