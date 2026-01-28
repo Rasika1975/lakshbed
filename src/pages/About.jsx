@@ -71,7 +71,22 @@ const About = () => {
               <p className="text-gray-600">
                 Professional guidance to address mental health challenges and emotional well-being.
               </p>
-            </div>
+            </div
+              import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+
+export default Counter;
+            
             
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
