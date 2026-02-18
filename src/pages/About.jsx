@@ -92,6 +92,10 @@ export default Counter;
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Icon type="anxiety" className="w-8 h-8 text-blue-600" />
               </div>
+               <div className="bg-white p-8 rounded-lg shadow-md text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Icon type="anxiety" className="w-8 h-8 text-blue-600" />
+              </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Personalized Care</h3>
               <p className="text-gray-600">
                 Individualized treatment plans tailored to your specific needs and goals.
