@@ -28,6 +28,12 @@ const Navbar = () => {
             Contact
           </li>
         </ul>
+          
+        {/* Logo */}
+        <h1 className="text-2xl font-bold text-blue-600 cursor-pointer">
+          YourBrand
+        </h1>
+
 
         {/* Button */}
         <div className="hidden md:block">
@@ -71,3 +77,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
