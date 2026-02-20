@@ -49,6 +49,13 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+      /* Mobile Menu Icon */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+      </div>
 
       {/* Mobile Menu */}
       {isOpen && (
@@ -77,4 +84,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
