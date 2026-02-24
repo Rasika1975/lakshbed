@@ -28,7 +28,21 @@ const Navbar = () => {
             Contact
           </li>
         </ul>
-          
+          {/* Desktop Menu */}
+        <ul className="hidden md:flex space-x-8 font-medium text-gray-700">
+          <li className="hover:text-blue-600 cursor-pointer transition">
+            Home
+          </li>
+          <li className="hover:text-blue-600 cursor-pointer transition">
+            Features
+          </li>
+          <li className="hover:text-blue-600 cursor-pointer transition">
+            Pricing
+          </li>
+          <li className="hover:text-blue-600 cursor-pointer transition">
+            Contact
+          </li>
+        </ul>
         {/* Logo */}
         <h1 className="text-2xl font-bold text-blue-600 cursor-pointer">
           YourBrand
@@ -84,5 +98,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
