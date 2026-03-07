@@ -18,15 +18,7 @@ const Navbar = () => {
           <li className="hover:text-blue-600 cursor-pointer transition">
             Home
           </li>
-          <li className="hover:text-blue-600 cursor-pointer transition">
-            Features
-          </li>
-          <li className="hover:text-blue-600 cursor-pointer transition">
-              Features
-            </li>
-            <li className="hover:text-blue-600 cursor-pointer transition">
-              Pricing
-            </li>
+
           <li className="hover:text-blue-600 cursor-pointer transition">
             Pricing
           </li>
@@ -104,6 +96,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
 
