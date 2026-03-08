@@ -12,6 +12,17 @@ const AppointmentForm = () => {
     sessionType: 'in-person',
     message: ''
   });
+  const AppointmentForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    service: '',
+    date: '',
+    time: '',
+    sessionType: 'in-person',
+    message: ''
+  });
 
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
