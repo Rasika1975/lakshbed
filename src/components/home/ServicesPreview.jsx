@@ -13,12 +13,7 @@ const ServicesPreview = () => {
       description: "Personalized hypnotherapy sessions to help you overcome stress and anxiety, promoting mental peace and emotional balance.",
       iconType: "anxiety"
     },
-    {
-      id: 2,
-      title: "Depression Counselling",
-      description: "Compassionate therapy sessions designed to help you overcome depression and regain joy and motivation in life.",
-      iconType: "depression"
-    },
+
     {
       id: 3,
       title: "Family & Relationship Counselling",
