@@ -17,6 +17,14 @@ const FAQ = () => {
           subtitle="Common Queries"
           center={true}
         />
+        <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
         
         <div className="max-w-3xl mx-auto">
           <div className="space-y-4">
