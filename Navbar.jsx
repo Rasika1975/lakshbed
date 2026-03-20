@@ -25,15 +25,7 @@ const Navbar = () => {
           <li className="hover:text-blue-600 cursor-pointer transition">
             Contact
           </li>
-        </ul>
-          {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 font-medium text-gray-700">
-          <li className="hover:text-blue-600 cursor-pointer transition">
-            Home
-          </li>
-          <li className="hover:text-blue-600 cursor-pointer transition">
-            Features
-          </li>
+        
           <li className="hover:text-blue-600 cursor-pointer transition">
             Pricing
           </li>
