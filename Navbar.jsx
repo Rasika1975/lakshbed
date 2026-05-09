@@ -4,8 +4,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md fixed w-full z-50">
-    
         <h1 className="text-2xl font-bold text-blue-600 cursor-pointer">
           YourBrand
         </h1>
