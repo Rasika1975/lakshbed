@@ -4,10 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-        <h1 className="text-2xl font-bold text-blue-600 cursor-pointer">
-          YourBrand
-        </h1>
-
+      
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 font-medium text-gray-700">
           <li className="hover:text-blue-600 cursor-pointer transition">
