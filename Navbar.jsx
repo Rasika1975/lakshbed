@@ -6,10 +6,7 @@ const Navbar = () => {
   return (
       
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 font-medium text-gray-700">
-          <li className="hover:text-blue-600 cursor-pointer transition">
-            Home
-          </li>
+        <ul className="hidden md:flex space-x-8 font-medium text-gray-700"
 
           <li className="hover:text-blue-600 cursor-pointer transition">
             Pricing
