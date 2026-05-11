@@ -8,7 +8,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 font-medium text-gray-700"
 
-          <li className="hover:text-blue-600 cursor-pointer transition">
+          <li clr:text-blue-600 cursor-pointer transition">
             Pricing
           </li>
           <li className="hover:text-blue-600 cursor-pointer transition">
