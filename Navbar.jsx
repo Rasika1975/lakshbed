@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
       
         {/* Desktop Menu */}
-        <ul className="hidden m
+        <u
           <li clr:text-blue-600 cursor-po
           <li className="hover:text-blue-600 cursor-pointer transition">
             Contact
