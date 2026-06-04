@@ -2,8 +2,7 @@
 
 /* Custom styles for floating elements */
 .clip-triangle {
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%
 
 /* Custom styles for glassmorphism */
 .glass-effect {
