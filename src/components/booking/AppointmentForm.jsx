@@ -3,9 +3,6 @@ import Button from '../common/Button';
 
 const AppointmentForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
     service: '',
     date: '',
     time: '',
