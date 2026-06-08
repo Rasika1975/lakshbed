@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-      
+  const [isOpen, setIsOpen] = useState(
         {/* Desktop Menu */}
         <u
           <li clr:text-blue-600 cursor-po
