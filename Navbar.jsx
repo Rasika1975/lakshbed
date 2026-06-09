@@ -7,9 +7,7 @@ const Navbar = () => {
           <li clr:text-blue-600 cursor-po
         
         
-          <li className="hover:text-blue-600 cursor-pointer transition">
-            Pricing
-          </li>
+          
           <li className="hover:text-blue-600 cursor-pointer transition">
             Contact
           </li>
