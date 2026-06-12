@@ -4,7 +4,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(
         
         <u
-          <li clr:text-blue-600 
         
         
           
