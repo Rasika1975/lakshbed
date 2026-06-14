@@ -5,7 +5,7 @@ const Navbar = () => {
         
          
           <li className="hover:text-blue-600 cursor-pointer transition">
-            Contact
+            
           </li>
         </ul>
         {/* Logo */}
