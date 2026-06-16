@@ -6,7 +6,7 @@ const Navbar = () => {
          
           <li className="hover:text-blue-600 cursor-pointer transition">
             
-          </li>
+        
         </ul>
         {/* Logo */}
         <h1 className="text-2xl font-bold text-blue-600 cursor-pointer">
