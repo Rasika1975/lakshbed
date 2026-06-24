@@ -9,7 +9,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <SectionTitle 
           title="About Our Center" 
-          subtitle="Our Story"
+          
           center={true}
         />
         
