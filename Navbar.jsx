@@ -4,9 +4,7 @@ const Navbar = () =>
   const [isOpen, setIsOpen] = useState(
         
       
-          <li className="hover:text-blue-600 cursor-point
-            
-      
+          <li className="hover:text-blue-600 cur
         
         <h1 className="text-2xl font-bold text-blue-600 cursor-pointer">
         
