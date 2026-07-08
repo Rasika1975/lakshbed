@@ -7,7 +7,7 @@ const Navbar = () =>
         
         <h1 className="text-2xl font-bold text-blue-600 cursor-pointer">
         
-        <div className="hidden md:block">
+        
           <button className="bg-blue-600 text-white px-5 py-2 rounded-xl hover:bg-blue-700 transition duration-300">
             Get Started
         {/* Mobile Menu Icon */}
