@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Navbar = () => 
   const [isOpen, setIsOpen] = useState(
         
-          <li className="hover:text-blue-600 cur
+          <li className="hover:text-blue-600 
         
         <h1 className="text-2xl font-bold text-blue-600 cursor-pointer">
         
