@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Navbar = () => 
+const Navbar = 
   const [isOpen, setIsOpen] = 
           <li className="hover:text-blue-600 
         
