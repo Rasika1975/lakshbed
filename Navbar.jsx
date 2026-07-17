@@ -6,8 +6,7 @@ const Navbar =
         <h1 className="text-2xl font-bold text-blue-600 cursor-pointer">
         
         
-          <button className="bg-blue-600 text-white px-5 py-2 rounded-xl hover:bg-blue-700 transition duration-300">
-      
+          <button className="bg-blue-600 text-white px-5 py-2 rounded-xl hover:bg-blue-700 transition duration-300"
         {/* Mobile Menu Icon */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
